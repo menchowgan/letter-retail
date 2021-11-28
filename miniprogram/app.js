@@ -1,3 +1,5 @@
+import {envs} from "./config/environment.js"
+
 // app.js
 App({
   onLaunch: function () {
@@ -6,6 +8,7 @@ App({
     } else {
       wx.cloud.init({
         traceUser: true,
+        env: envs.productionEnv
       });
     }
 
