@@ -1,6 +1,11 @@
 const db = wx.cloud.database()
 
-class DBManager{
+/**
+ * author menchowgan
+ * 2021.3
+ * wx-cloud-db封装
+ */
+export default class DBManager{
   constructor(collectionName){
     this.collection = db.collection(collectionName)
   }
@@ -46,5 +51,3 @@ class DBManager{
     )
   }
 }
-
-export default DBManager
