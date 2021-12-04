@@ -1,4 +1,51 @@
 <!--index.wxml-->
+<van-search
+  value="{{ condition }}"
+  placeholder="请输入搜索关键词"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
 <view class="container">
-  新零售主页面
+  <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+    <van-sidebar-item title="信件" />
+    <van-sidebar-item title="邮票" />
+  </van-sidebar>
+  <view class="container_merchandise_show">
+    <van-card
+      num="2"
+      tag="标签"
+      price="10.00"
+      desc="描述信息"
+      title="商品标题"
+      thumb="{{ imageURL }}"
+    >
+    </van-card>
+    <van-card
+      num="2"
+      tag="标签"
+      price="10.00"
+      desc="描述信息"
+      title="商品标题"
+      thumb="{{ imageURL }}"
+    >
+    </van-card>
+    <van-card
+      num="2"
+      tag="标签"
+      price="10.00"
+      desc="描述信息"
+      title="商品标题"
+      thumb="{{ imageURL }}"
+    >
+    </van-card>
+    <van-card
+      num="2"
+      tag="标签"
+      price="10.00"
+      desc="描述信息"
+      title="商品标题"
+      thumb="{{ imageURL }}"
+    >
+    </van-card>
+  </view>
 </view>
