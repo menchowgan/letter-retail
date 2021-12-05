@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.9.2"
+  },
+  "name": "letter-retail",
+  "description": "这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menchowgan/letter-retail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/menchowgan/letter-retail/issues"
+  },
+  "homepage": "https://github.com/menchowgan/letter-retail#readme"
+}
