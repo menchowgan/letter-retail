@@ -4,8 +4,8 @@ const envs = {
 }
 
 const tableName = {
-  marchIofo: "",
-  marchDetail: ""
+  spu: "ms_spu",
+  sku: "ms_sku"
 }
 
 export {

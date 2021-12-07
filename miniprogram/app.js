@@ -8,7 +8,7 @@ App({
     } else {
       wx.cloud.init({
         traceUser: true,
-        env: envs.productionEnv
+        env: envs.devEnv
       });
     }
 
