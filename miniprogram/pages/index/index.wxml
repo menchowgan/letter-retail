@@ -8,44 +8,21 @@
 <view class="container">
   <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
     <van-sidebar-item title="信件" />
-    <van-sidebar-item title="邮票" />
+    <van-sidebar-item title="明信片" />
   </van-sidebar>
   <view class="container_merchandise_show">
-    <van-card
-      num="2"
-      tag="标签"
-      price="10.00"
-      desc="描述信息"
-      title="商品标题"
-      thumb="{{ imageURL }}"
-    >
-    </van-card>
-    <van-card
-      num="2"
-      tag="标签"
-      price="10.00"
-      desc="描述信息"
-      title="商品标题"
-      thumb="{{ imageURL }}"
-    >
-    </van-card>
-    <van-card
-      num="2"
-      tag="标签"
-      price="10.00"
-      desc="描述信息"
-      title="商品标题"
-      thumb="{{ imageURL }}"
-    >
-    </van-card>
-    <van-card
-      num="2"
-      tag="标签"
-      price="10.00"
-      desc="描述信息"
-      title="商品标题"
-      thumb="{{ imageURL }}"
-    >
-    </van-card>
+    <block
+      wx:for="{{spuList}}"
+      wx:key="index"
+      >
+      <van-card
+        tag="{{item.label}}"
+        price="{{item.price}}"
+        desc="{{item.desc}}"
+        title="{{item.name}}"
+        thumb="{{ item.icon }}"
+      >
+      </van-card>
+    </block>
   </view>
 </view>
