@@ -1,0 +1,78 @@
+/* pages/merchandiseDetail/index.wxss */
+.merchandise_detail{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.merchandise_detail .body{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+  margin-bottom: 200rpx;
+}
+
+.merchandise_detail .body image{
+  width: 100%;
+  margin: auto;
+}
+
+.merchandise_detail .body .container{
+  width: 100%;
+  margin-top: 16rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 8rpx;
+  background-color: #f6f6f6;
+}
+
+.merchandise_detail .body .container .desc{
+  font-size: 32rpx;
+  color: #777777;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 32rpx;
+  padding-right: 16rpx;
+}
+
+.merchandise_detail .body .container .price{
+  color: #ff4141;
+  font-size: 30rpx;
+  margin-left: 32rpx;
+}
+
+.merchandise_detail .body .container .spuInfo{
+  color: #777777;
+  font-size: 40rpx;
+  font-style:italic;
+  margin-left: 32rpx;
+}
+
+.merchandise_detail .body .container .info{
+  width: 100%;
+  height: 40rpx;
+  font-size: 26rpx;
+  color: #888888;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.merchandise_detail .body .container .info text{
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  height: 40rpx;
+}
+
+.merchandise_detail .body .icons{
+  height: 720rpx;
+}
+
+.merchandise_detail .contact-us{
+  width: 80%;
+  position: fixed;
+  bottom: 56rpx;
+}
