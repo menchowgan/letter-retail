@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/merchandiseDetail/index",
     "pages/index/index",
     "pages/personal/index"
   ],
@@ -12,12 +13,14 @@
   },
   "tabBar": {
     "selectedColor": "#1296db",
-    "list": [{
+    "list": [
+      {
         "iconPath": "./images/home-1.png",
         "selectedIconPath": "./images/home-2.png",
         "pagePath": "pages/index/index",
         "text": "首页"
-      },{
+      },
+      {
         "iconPath": "./images/individual-1.png",
         "selectedIconPath": "./images/individual-2.png",
         "pagePath": "pages/personal/index",
