@@ -1,0 +1,48 @@
+<!--pages/merchandiseDetail/index.wxml-->
+<view class="merchandise_detail">
+  <view class="body">
+    <swiper 
+      indicator-dots
+      autoplay
+      interval="3000"
+      class="icons"
+      style="background-color: black;"
+    >
+      <block
+        wx:for="{{merchIofo.icons}}"          
+        wx:key="index">
+        <swiper-item 
+          style="display: flex;flex-direction: row;justify-content: center;">
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="container">
+      <view class="desc">{{merchIofo.desc}}</view>
+      <view class="spuInfo">{{merchIofo.spu}}</view>
+      <view class="price">¥ {{merchIofo.price}}</view>
+      <view class="info">
+        <text>库存：{{merchIofo.store}}</text>
+        <text>销量：{{merchIofo.sale}}</text>
+      </view>
+    </view>
+  </view>
+
+  <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" bind:click="toService" />
+    <van-goods-action-icon icon="cart-o" text="购物车" bind:click="toShppongCart" />
+    <van-goods-action-button
+      text="加入购物车"
+      type="warning"
+      wx:if="{{merchIofo.onSale}}"
+      bind:click="addShoppingCart"
+    />
+    <van-goods-action-button text="立即购买" 
+      bind:click="toBuy"
+      wx:if="{{merchIofo.onSale}}" />
+    <van-goods-action-button text="立即预订" 
+      bind:click="toBuy"
+      wx:else />
+  </van-goods-action>
+</view>
