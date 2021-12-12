@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/merchandiseDetail/index",
     "pages/index/index",
-    "pages/personal/index"
+    "pages/personal/index",
+    "pages/merchandiseDetail/index"
   ],
   "window": {
     "backgroundColor": "#1296db",
