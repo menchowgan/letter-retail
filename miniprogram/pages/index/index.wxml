@@ -21,7 +21,8 @@
         desc="{{item.desc}}"
         title="{{item.name}}"
         thumb="{{ item.icon }}"
-      >
+        bindtap="toDetail"
+        data-spuInfo="{{item}}">
       </van-card>
     </block>
   </view>

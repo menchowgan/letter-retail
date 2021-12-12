@@ -60,6 +60,13 @@ Page({
   },
   conCancel(){
 
+  },
+  toDetail(e){
+    console.log("spuInfo", e)
+    let spuCode = e.currentTarget.dataset.spuinfo.code
+    wx.navigateTo({
+      url: `/pages/merchandiseDetail/index?spu=${spuCode}`
+    })
   }
   
 });
