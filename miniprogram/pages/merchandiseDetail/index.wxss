@@ -28,7 +28,6 @@
   padding-top: 8rpx;
   background-color: #f6f6f6;
 }
-
 .merchandise_detail .body .container .desc{
   font-size: 32rpx;
   color: #777777;

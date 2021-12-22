@@ -1,27 +1,32 @@
 // pages/merchandiseDetail/index.js
+import SpuDetailManager from "../../models/SpuDetailManager"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    merchIofo: {
-      onSale: true,
-      des: "明信片",
-      price: 0.8,
-      spu: "明信片",
-      store: 20,
-      sale: 20,
-      icons: ["cloud://test-7gu30vhoa7be8a4e.7465-test-7gu30vhoa7be8a4e-1308530032/SPU/spu001.jpg"]
-    },
+    merchIofo: {},
 
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad(options){
+    console.log("detail options", options)
+    this.spuDetailManager = new SpuDetailManager("spu_detail")
 
+    this._searchDetailBySpu(options.spu)
+  },
+
+  async _searchDetailBySpu(spuCode){
+    const res = await this.spuDetailManager.searchBySpu(spuCode)
+    if(res && res.length > 0){
+      this.setData({
+        merchIofo: res[0]
+      })
+    }
   },
 
   addShoppingCart(){
