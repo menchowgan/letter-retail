@@ -29,9 +29,7 @@ class DBManager{
       limit = 20
     }
 
-    return this.collection.where({
-      ...obj
-    })
+    return this.collection.where(obj)
     .skip(skip)
     .limit(limit)
     .get()
